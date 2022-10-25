@@ -1,20 +1,21 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int largest(int arr[], int n) {
-    int max=arr[0];
+int main()
+{
+    int n;
+    cout<<"Enter the size of an array: "<<endl;
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elements of an array:"<<endl;
     for(int i=0;i<n;i++){
-        if(arr[i]>max){
-            max=arr[i];
-        }
+        cin>>arr[i];
     }
-    return max;
-}
-
-int main() {
-  
-  int arr[]={3,6,9}; 
-  int n=3;
-  cout<<largest(arr, n)); 
+    int largest=INT_MIN;
+    for(int i=0;i<n;i++){
+    largest=max(arr[i], largest);
+    }
+    cout<<"Largest element in the array is:"<<endl;
+    cout<<largest<<endl;
+    return 0;
 }
 

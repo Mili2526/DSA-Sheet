@@ -3,13 +3,16 @@ using namespace std;
 
 int main()
 {
-    int a[] = {3, 6, 9};
-    int n = sizeof(a) / sizeof(a[0]);
-    int sum = 0;
-
-    for (int i = 0; i < n; i++)
-    {
-        sum = sum + a[i];
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
     }
-    cout << "Sum of element of array is " << sum;
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum=sum+arr[i];
+    }
+    cout<<sum<<endl;
+    return 0;
 }
