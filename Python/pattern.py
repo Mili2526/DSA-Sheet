@@ -1,3 +1,4 @@
+
 #take n as a input which will be input for number of rows and a boolean input in form of 0 and 1 and print the astrologer star form
 
 n = int(input("Enter the number of rows:"))
